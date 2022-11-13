@@ -45,7 +45,7 @@ public class HelpAndContactPageTest extends BaseClass {
 
 	}
 
-	@Test(alwaysRun = true, retryAnalyzer = RetryClass.class)
+	@Test(groups = "HelpAndContact", alwaysRun = true, retryAnalyzer = RetryClass.class)
 	public void customerService07() {
 		Logs.log("This is from group with priority 7");
 	}

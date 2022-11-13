@@ -12,6 +12,7 @@ import base.BaseClass;
 public class DailyDealsTest extends BaseClass{
 	@Test
 	public void dealsOfTheDay() {
-		dailyOffers.clickDailyDeals();
+		//dailyOffers.clickDailyDeals();
+		dailyOffers.clickDailyDeals02();
 	}
 }
