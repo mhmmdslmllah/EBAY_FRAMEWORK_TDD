@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[This is from group with priority 3<br>]]>
+    </line>
+    <line>
+      <![CDATA[This is from group with priority 5<br>]]>
+    </line>
+    <line>
+      <![CDATA[This is from group with priority 6<br>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3769" started-at="2022-10-19T17:27:23 EDT" finished-at="2022-10-19T17:27:27 EDT">
+  <suite name="Suite" duration-ms="77" started-at="2022-11-12T11:16:01 EST" finished-at="2022-11-12T11:16:01 EST">
     <groups>
+      <group name="priority">
+        <method signature="HelpAndContactPageTest.customerService03()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService03" class="help.HelpAndContactPageTest"/>
+        <method signature="HelpAndContactPageTest.customerService05()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService05" class="help.HelpAndContactPageTest"/>
+        <method signature="HelpAndContactPageTest.customerService06()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService06" class="help.HelpAndContactPageTest"/>
+      </group> <!-- priority -->
+      <group name="HelpAndContact">
+        <method signature="HelpAndContactPageTest.customerService03()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService03" class="help.HelpAndContactPageTest"/>
+        <method signature="HelpAndContactPageTest.customerService05()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService05" class="help.HelpAndContactPageTest"/>
+        <method signature="HelpAndContactPageTest.customerService06()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService06" class="help.HelpAndContactPageTest"/>
+      </group> <!-- HelpAndContact -->
     </groups>
-    <test name="Default test" duration-ms="3769" started-at="2022-10-19T17:27:23 EDT" finished-at="2022-10-19T17:27:27 EDT">
-      <class name="CommerceTest.TestClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:CommerceTest.TestClass@25bbf683]" name="setUp" is-config="true" duration-ms="3573" started-at="2022-10-19T17:27:23 EDT" finished-at="2022-10-19T17:27:26 EDT">
+    <test name="Test" duration-ms="77" started-at="2022-11-12T11:16:01 EST" finished-at="2022-11-12T11:16:01 EST">
+      <class name="help.HelpAndContactPageTest">
+        <test-method status="PASS" signature="customerService03()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService03" duration-ms="33" started-at="2022-11-12T11:16:01 EST" finished-at="2022-11-12T11:16:01 EST">
           <reporter-output>
+            <line>
+              <![CDATA[This is from group with priority 3<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="aTest()[pri:0, instance:CommerceTest.TestClass@25bbf683]" name="aTest" duration-ms="6" started-at="2022-10-19T17:27:26 EDT" finished-at="2022-10-19T17:27:26 EDT">
+        </test-method> <!-- customerService03 -->
+        <test-method status="PASS" signature="customerService05()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService05" duration-ms="2" started-at="2022-11-12T11:16:01 EST" finished-at="2022-11-12T11:16:01 EST">
           <reporter-output>
+            <line>
+              <![CDATA[This is from group with priority 5<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- aTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:CommerceTest.TestClass@25bbf683]" name="tearDown" is-config="true" duration-ms="147" started-at="2022-10-19T17:27:26 EDT" finished-at="2022-10-19T17:27:27 EDT">
+        </test-method> <!-- customerService05 -->
+        <test-method status="PASS" signature="customerService06()[pri:0, instance:help.HelpAndContactPageTest@4524411f]" name="customerService06" duration-ms="2" started-at="2022-11-12T11:16:01 EST" finished-at="2022-11-12T11:16:01 EST">
           <reporter-output>
+            <line>
+              <![CDATA[This is from group with priority 6<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- CommerceTest.TestClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- customerService06 -->
+      </class> <!-- help.HelpAndContactPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

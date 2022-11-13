@@ -10,6 +10,11 @@ public class Configuration {
 	public Properties getProperties() {
 		return properties;
 	}
+	
+	public String getProperty(String key) {
+		return properties.getProperty(key);
+	}
+	
 
 	public Configuration() {
 		loadProperties();
