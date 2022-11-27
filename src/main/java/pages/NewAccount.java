@@ -9,10 +9,10 @@ import static common.CommonActions.*;
 public class NewAccount {
 	public NewAccount(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		
+
 	}
-	
-	@FindBy (xpath = "//a[text()='register']")
+
+	@FindBy(xpath = "//a[text()='register']")
 	WebElement registrationElement;
 	@FindBy(xpath = "//input[@id='firstname']")
 	WebElement firstNamElement;
@@ -26,7 +26,7 @@ public class NewAccount {
 	WebElement continuElement;
 	@FindBy(xpath = "(//a[text()='Sign in'])[1]")
 	WebElement hiMuhammedElement;
-	
+
 	public void clickAccount() {
 		clickSave(registrationElement);
 		input(firstNamElement, "saleem");
@@ -35,7 +35,5 @@ public class NewAccount {
 		input(passwordElement, "098.Ebay");
 		clickSave(continuElement);
 	}
-	
-	
-	
+
 }

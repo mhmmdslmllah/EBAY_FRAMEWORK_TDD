@@ -1,14 +1,13 @@
 package input;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 import base.BaseClass;
 import reporting.Logs;
 
 public class InputTest extends BaseClass{
 	
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void aTest() {
 		homePage.typeField();
 	}
@@ -18,12 +17,12 @@ public class InputTest extends BaseClass{
 		Logs.log("This is bTest priority 1.");
 	}
 	
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = false)
 	public void cTest() {
 		Logs.log("This is cTest priority 4.");
 	}
 	
-	@Test(priority = 0, enabled = true)
+	@Test(priority = 0, enabled = false)
 	public void dTest() {
 		Logs.log("This is dTest priority 3.");
 	}

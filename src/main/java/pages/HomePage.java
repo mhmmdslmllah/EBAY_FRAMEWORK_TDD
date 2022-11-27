@@ -10,8 +10,6 @@ import static common.CommonActions.*;
 
 public class HomePage {
 
-	
-	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
